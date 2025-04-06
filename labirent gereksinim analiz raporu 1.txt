@@ -1,0 +1,44 @@
+YAZILIM GEREKSÝNÝM ANALÝZ RAPORU
+PROJE ADI: Labirent Ýçindeki Kiþi Konumlandýrma Programý
+Hazýrlayan: Bahattin ADÝYAMAN
+1. GÝRÝÞ
+Bu proje, bir labirent içinde bulunan kiþilerin koordinatlarýný alarak Öklid veya Manhattan mesafe hesaplama algoritmalarý ile en yakýn ve en uzak kiþiyi belirlemeyi amaçlamaktadýr. Kullanýcý, belirlediði tespit mesafesi dahilindeki kiþileri görüntüleyebilir
+2. KAPSAM VE AMAÇ
+Programýn hedef kitlesi, harita ve konum verileri ile çalýþan geliþtiriciler ve mesafe hesaplama algoritmalarýný öðrenmek isteyen kullanýcýlar olabilir. Bu uygulama, iki nokta arasýndaki farklý mesafe hesaplama yöntemlerini deneyimleme imkâný sunar.
+Kullaným Senaryosu:
+*Kullanýcý bir labirent geniþliði ve yüksekliði belirler.
+*Kiþi sayýsýný girerek komutlarýný belirler.
+*kendi konumunu girer.
+*Mesafe hesaplama yöntemi seçerek en yakýn ve en uzak kiþiyi bulur.
+*elirlenen tespit mesafesi içindeki kiþileri görüntüleyebilir.
+
+3. FONKSÝYONEL GEREKSÝNÝMLER
+Kullanýcý aþaðýdaki iþlemleri gerçekleþtirebilmelidir:
+Labirentin boyutlarýný belirleme.
+Kiþi sayýsýný girme ve koordinatlarýný belirleme.
+Kendi konumunu girme.
+Mesafe hesaplama yöntemi seçme (Öklid veya Manhattan).
+En yakýn ve en uzak kiþiyi bulma.
+Tespit mesafesi içindeki kiþileri listeleme.
+Yanlýþ giriþleri önleme: Labirent sýnýrlarý dýþýna çýkamaz.
+
+
+4. PERFORMANS VE SÝSTEM GEREKSÝNÝMLERÝ
+Minimum Gereksinimler:
+  C derleyicisi (GCC, Clang veya MSVC desteklenir).
+  Terminal tabanlý kullaným için Windows, Linux veya MacOS uyumlu sistemler.
+  Hafif bellek kullanýmý ile büyük veri kümeleri için optimize edilebilir.
+Performans:
+Büyük kiþi sayýlarý için dinamik bellek yönetimi (malloc/free) önerilir.
+Hesaplamalar mümkün olduðunca verimli yapýlmalýdýr.
+Kullanýcý giriþleri geçerli olup olmadýðýný kontrol etmek için doðrulanmalýdýr.
+
+5. GÜVENLÝK VE SINIRLANDIRMALAR
+Kullanýcýnýn hatalý giriþ yapmasýný önlemek için doðrulama mekanizmasý eklenmiþtir.
+Negatif veya hatalý koordinat girilemez.
+Labirent sýnýrlarý dýþýna çýkmak mümkün deðildir.
+6. SONUÇ VE ÖNERÝLER
+Mevcut sistem doðru bir þekilde çalýþmaktadýr ancak ileride þu özellikler eklenebilir:
+ Grafiksel Arayüz: Kullanýcý dostu bir GUI ile labirent haritasý eklenebilir.
+ Dinamik Bellek Kullanýmý: Daha büyük veri kümeleri için malloc/free yönetimi önerilmektedir.
+ Farklý Mesafe Algoritmalarý: Ekstra algoritmalarla seçenek artýrýlabilir.
